@@ -305,7 +305,7 @@ export default function ZamaDomainRegistry() {
   const waitForFhevm = () => {
     return new Promise((resolve, reject) => {
       const startTime = Date.now()
-      const timeout = 15000 // Tăng timeout lên 15 giây
+      const timeout = 200000 // Tăng timeout lên 15 giây
       const checkFhevm = () => {
         console.log("[v0] Checking for window.fhevm...")
         if (window.fhevm) {
